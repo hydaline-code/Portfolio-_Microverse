@@ -1,0 +1,26 @@
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav_bar {
+  background-color: #be3144;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.list_items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  color: white;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
