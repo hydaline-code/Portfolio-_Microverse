@@ -106,3 +106,25 @@ button {
 button:hover {
   background: #be3144;
 }
+.End-section{
+  background-color: #303841;
+}
+h2,p{
+ text-align: center;
+}
+.contact-links{
+  display: flex;
+  justify-content: space-around;
+}
+.foot{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: large;
+}
+hr{
+ background-color: #be3144;
+ 
+}
+
