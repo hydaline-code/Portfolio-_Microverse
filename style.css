@@ -6,6 +6,7 @@ html {
 body {
   margin: 0px;
   padding: 0px;
+  position: relative;
 }
 
 .nav_bar {
@@ -13,6 +14,8 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 1rem;
+  position: fixed;
+  width: 100%;
 }
 
 .list_items {
@@ -24,26 +27,82 @@ body {
   margin-right: 2rem;
   font-size: 1.5rem;
 }
-.welcome{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(8, 8, 8);
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(8, 8, 8);
 }
-h1{
+h1 {
   color: white;
   font-size: 2rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-bottom: 0;
 }
-h5{
+h5 {
   color: #be3144;
   text-align: center;
-  font-size:1.5rem ;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
   margin-top: 0;
+}
+
+.project_images {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: #45567d;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.project_header {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  border-bottom: 2px solid white;
+  max-width: 640px;
+  padding: 10px;
+  margin: 0 auto 6rem auto;
+}
+
+img {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+article {
+  background: #303841;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 2rem;
+  background: #303841;
+  transition: background 0.3s ease-out;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+button:hover {
+  background: #be3144;
 }
